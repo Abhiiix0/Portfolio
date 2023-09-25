@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Abhishek Nayak</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="W-square.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+/* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 600;
+text-decoration: none;
+color: whitesmoke;
+list-style: none;
+}
+body{
+    /* position: absolute; */
+    
+    background-color: black;
+}
+#particles-js{
+    height: calc(100vh - 122px);
+    width: calc(100vw - 122px);
+    border: 1px solid white;
+    margin: 30px;
+    padding: 30px;
+    justify-content: space-between;
+    background: url(darkspace.jpg);
+    background-size: cover ;
+}
+body .container{
+    height: calc(100vh - 122px);
+    width: calc(100vw - 122px);
+    position: absolute;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    /* background-position: center; */
+}
+
+
+
+
+.nav-bar{
+    z-index: 1;
+    color: wheat;
+    /* border: 1px solid red; */
+    height: fit-content;
+    /* padding-top:0px; */
+}
+.nav-bar .info .name{
+    /* border: 1px solid red; */
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 200;
+    margin-top: -15px;
+    margin-bottom: -10px;
+    /* padding-top: -10px; */
+    font-size: 60px;
+}
+.nav-bar .nav{
+    margin-top: 50px;
+}
+.nav-bar .nav ul li{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.active {
+color: green;
+}
+.my-info{
+    color: wheat;
+    animation: 1.5s ease-out 0s 1 slidesinfo;
+
+}
+@keyframes slidesinfo{
+    0%{
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0);
+      }
+}
+.my-info{
+    /* float: right; */
+    /* border: 1px solid red; */
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: right;
+    text-align: right;
+    /* height: max-content; */
+    /* height: 100%-; */
+    overflow: auto;
+    /* height: inherit; */
+}
+.my-info ul li{
+    cursor: pointer;
+    /* text-align: end; */
+    font-family: 'Poppins', sans-serif;;    font-weight: 100;
+    /* font-size: 50px; */
+    line-height: 1;
+    margin-bottom: 25px;
+/* width: 40px; */
+}
+.my-info ul li a{
+    font-family: 'Poppins', sans-serif;;    font-weight: 100;
+    font-size: 50px;
+}
+.my-info ul li:hover{
+   opacity: 0.5;
+}
+.my-info ul{
+    /* border: 1px solid red; */
+    overflow: auto;
+}
+@media screen and (max-width:660px){
+    #particles-js{
+    height: calc(100vh - 82px);
+    width: calc(100vw - 82px);
+    border: 1px solid white;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    background: url(darkspace.jpg);
+    background-size: cover ;
+}
+
+    body .container{
+    height: calc(100vh - 82px);
+    width: calc(100vw - 82px);
+    position: absolute;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    /* background-position: center; */
+}
+
+    .nav-bar .info .name{
+      
+        font-size: 30px;
+    }
+    .my-info ul li{
+    font-size: 31px;
+}
+
+}
+
+</style>
+<body >
+       <div id="particles-js">
+
+      
+    <div class="container"  >
+       
+        <div class="nav-bar">
+            <div class="info">
+                <p class="name">Abhishek Nayak</p>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-info">
+            <div class="projects-box">
+                <ul>
+                    <li><a href="https://pizzahut01.netlify.app/"><span class="date" style="font-size: small; margin-right: 5px; color: green;">25-08-2023</span>Pizza Hut </a></li>
+                    <li> <a href="https://abhishek-nayak-realestate.netlify.app/index.html#"><span class="date" style="font-size: small; margin-right: 5px; color: green;">05-06-2023</span>RealEstate Website</a></li>
+                    <li> <a href="https://abhiiix0.github.io/Snake-Xenzia/"><span class="date" style="font-size: small; margin-right: 5px; color: green;">11-05-2023</span>Snake Xezenia</a></li>
+                    <li> <a href="https://abhiiix0.github.io/TicTacToe--/"><span class="date" style="font-size: small; margin-right: 5px; color: green;">20-03-2023</span>Tic-Tac-Toe </a></li>
+                    <li> <a href="https://abhiiix0.github.io/ToDoList2023/"><span class="date" style="font-size: small; margin-right: 5px; color: green;">05-01-2023</span>Todo List </a></li>
+                    <li> <a href="https://abhiiix0.github.io/Bhojan/"><span class="date" style="font-size: small; margin-right: 5px; color: green;">03-12-2022</span>Bhojan</a></li>
+                    <!-- <li><span class="date" style="font-size: small; margin-right: 5px; color: green;">25-9-2022</span>Pizza Hut </li> -->
+                    <!-- <li><span class="date" style="font-size: small; margin-right: 5px; color: green;">25-9-2022</span>Todo List</li> -->
+                </ul>
+            </div>
+            <!-- <p>Born in 2003 in jajpur, Odisha. I belive web Development can be more devirse and inspiring. with a mission to present the possibilites of web design. i'm pursing new expression through experiments and thoughts.</p> -->
+        </div>
+    </div>
+</div>
+    <script src="particles.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Abhishek Nayak</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="W-square.png" type="image/x-icon">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      color: whitesmoke;
+      list-style: none;
+    }
+    body {
+      /* position: absolute; */
+
+      background-color: black;
+    }
+    #particles-js {
+      height: calc(100vh - 122px);
+      width: calc(100vw - 122px);
+      border: 1px solid white;
+      margin: 30px;
+      padding: 30px;
+      justify-content: space-between;
+      background: url(darkspace.jpg);
+      background-size: cover;
+    }
+    body .container {
+      height: calc(100vh - 122px);
+      width: calc(100vw - 122px);
+      position: absolute;
+      /* border: 1px solid white; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      /* background-position: center; */
+    }
+
+    .nav-bar {
+      z-index: 1;
+      color: wheat;
+      /* border: 1px solid red; */
+      /* padding-top:0px; */
+    }
+    .nav-bar .info .name {
+      /* border: 1px solid red; */
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      margin-top: -15px;
+      margin-bottom: -10px;
+      /* padding-top: -10px; */
+      font-size: 60px;
+    }
+    .nav-bar .nav {
+      margin-top: 50px;
+    }
+    .nav-bar .nav ul li {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .active {
+      color: green;
+    }
+    
+    .my-info {
+      height: 100%;
+      color: wheat;
+      /* border: 1px solid red; */
+      /* float: right; */
+      animation: 1.5s ease-out 0s 1 slidesinfo;
+      
+
+      display: flex;
+      flex-direction: column;
+
+      /* align-items: center; */
+      justify-content: space-between;
+      /* height: max-content; */
+      /* height: 100%-; */
+      /* height: inherit; */
+    }
+    @keyframes slidesinfo{
+    0%{
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0);
+      }
+}
+    .my-info .skills {
+      text-align: right;
+      /* border: 1px solid red; */
+      width: 100%;
+      /* float: right; */
+      /* padding-top: -20px; */
+      display: flex;
+      flex-direction: column;
+      /* justify-content: right; */
+      align-items: end;
+    }
+    .my-info .current-note{
+      margin-top: 20px;
+      font-weight: 100;
+    }
+    .my-info .current-note p{
+      /* margin-top: 20px; */
+      font-weight: 100;
+      /* color: red; */
+    }
+    .my-info p{
+      float: right;
+      text-align: right;
+      /* border: 1px solid red; */
+      width: 600px;
+font-weight: 100;
+margin-bottom: 20px;
+    }
+    .skills h4{
+      /* margin-bottom: 50px; */
+      font-size: x-large;
+      font-weight: 100;
+      /* border: 1px solid red; */
+    }
+
+    .skills .html,
+    .css,
+    .js,
+    .react {
+      display: flex;
+      justify-content: right;
+      width: 550px;
+      height: 15px;
+      border: 0.4px solid whitesmoke;
+      /* margin-bottom: 5px; */
+      /* background-color: aqua; */
+    }
+    /* .skills #backend{
+      margin-bottom: 10px;
+    }
+    .skills #bBar{
+      margin-bottom: 10px;
+    } */
+    .skills label {
+      font-weight: 100;
+      /* padding-top: 10px; */
+    }
+
+    @media screen and (max-width: 660px) {
+      #particles-js {
+        height: calc(100vh - 82px);
+        width: calc(100vw - 82px);
+        border: 1px solid white;
+        margin: 20px;
+        padding: 20px;
+        justify-content: space-between;
+        background: url(darkspace.jpg);
+        background-size: cover;
+      }
+
+      body .container {
+        height: calc(100vh - 82px);
+        width: calc(100vw - 82px);
+        position: absolute;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        /* background-position: center; */
+      }
+      .nav-bar .info .name {
+        font-size: 30px;
+      }
+      .skills .html,
+    .css,
+    .js,
+    .react {
+      width: 85%;
+    }
+    .my-info p{
+      
+      width: 100%;
+/* font-weight: 100; */
+/* margin-bottom: 20px; */
+    }
+    .my-info .current-note{
+      margin-top: 35px;
+    }
+    }
+  </style>
+  <body>
+    <div id="particles-js">
+      <div class="container">
+        <div class="nav-bar">
+          <div class="info">
+            <p class="name">Abhishek Nayak</p>
+            <p>Frontend Developer</p>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="info.html" class="active">Info</a></li>
+              <li><a href="contacts.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="my-info">
+          <div class="current-note">
+            <p>
+              I am actively expanding my skill set through ongoing self study and hands on experience. Currently, I am learning React for building dynamic user interfaces, as well as backend development with MongoDB, Node.js and Express.js.
+            </p>
+          </div>
+         
+          <div class="skills">
+            <!-- <p>Born in 2003 in jajpur, Odisha. I belive web Development can be more devirse and inspiring. with a mission to present the possibilites of web design. i'm pursing new expression through experiments and thoughts.</p> -->
+            
+            <!-- <h4 style="color: #fff; margin-bottom: 20px">Skills:</h4> -->
+
+            <label for="html" style="margin-top: 10px">Html</label>
+            <div class="html">
+              <div
+            
+                id="htmlBar"
+                style="background-color: green;opacity: .7; "
+              >
+              </div>
+            </div>
+
+            <label for="css" style="margin-top: 10px">Css</label>
+            <div class="css">
+              <div
+            
+                id="cssBar"
+                style="background-color: green; opacity: .7;"
+              >
+              </div>
+            </div>
+
+            <label for="css" style="margin-top: 10px">Javascript</label>
+            <div class="css">
+              <div
+            
+                id="jsBar"
+                style="background-color: green; opacity: .7;"
+              >
+              </div>
+            </div>
+
+            <label for="css" style="margin-top: 10px">React</label>
+            <div class="css">
+              <div
+            
+                id="rBar"
+                style="background-color: green; opacity: .7;"
+              >
+              </div>
+            </div>
+
+            <label for="css" style="margin-top: 10px;">Backend</label>
+            <div class="css" id="backend">
+              <div
+            
+                id="bBar"
+                style="background-color: green; opacity: .7;"
+              >
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var h = 0;
+      var c = 0;
+      var j = 0;
+      var r = 0;
+      var b = 0;
+      function Htmlmove() {
+        if (h == 0) {
+          h = 1;
+          var html = document.getElementById("htmlBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          function frame() {
+            if (width >= 70) {
+              clearInterval(id);
+              h = 0;
+            } else {
+              width++;
+              html.style.width = width + "%";
+            }
+          }
+        }
+      }
+      Htmlmove()
+
+      function Cssmove() {
+        if (c == 0) {
+          c = 1;
+          var css = document.getElementById("cssBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          console.log("css");
+          function frame() {
+            if (width >= 60) {
+              clearInterval(id);
+              c = 0;
+            } else {
+              width++;
+              css.style.width = width + "%";
+            }
+          }
+        }
+      }
+      Cssmove();
+
+      function jsmove() {
+        if (j == 0) {
+          j = 1;
+          var js = document.getElementById("jsBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          console.log("css");
+          function frame() {
+            if (width >= 75) {
+              clearInterval(id);
+              j = 0;
+            } else {
+              width++;
+              js.style.width = width + "%";
+            }
+          }
+        }
+      }
+      jsmove();
+      function Rmove() {
+        if (r == 0) {
+          r = 1;
+          var react = document.getElementById("rBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          console.log("css");
+          function frame() {
+            if (width >= 50) {
+              clearInterval(id);
+              r = 0;
+            } else {
+              width++;
+              react.style.width = width + "%";
+            }
+          }
+        }
+      }
+      Rmove();
+
+      function Bmove() {
+        if (b == 0) {
+          b = 1;
+          var backend = document.getElementById("bBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          console.log("backend");
+          function frame() {
+            if (width >= 45) {
+              clearInterval(id);
+              b = 0;
+            } else {
+              width++;
+              backend.style.width = width + "%";
+            }
+          }
+        }
+      }
+      Bmove();
+    </script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
